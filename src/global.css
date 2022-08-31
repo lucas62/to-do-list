@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #FFF;
+
+    --gray-100: #F2F2F2;
+    --gray-200: #D9D9D9;
+    --gray-300: #808080;
+    --gray-400: #333333;
+    --gray-500: #262626;
+    --gray-600: #1A1A1A;
+    --gray-700: #0D0D0D;
+
+    --purple: #8284FA;
+    --purple-dark: #5E60CE;
+
+    --blue: #4EA8DE;
+    --blue-dark: #1E6F9F;
+
+    --danger: #E25858;
+}
+
+@media (max-width: 1080px) {
+    html {
+        font-size: 93.75%;
+    }
+}
+
+@media (max-width: 720px) {
+    html {
+        font-size: 87.5%;
+    }
+}
+
+:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--blue);
+}
+
+body {
+    background: var(--gray-600);
+    color: var(--white);
+}
+
+body, input, textarea, select, button {
+    font: 400 1rem "Inter", san-serif; 
+}
+
+button {
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Styling the scrollbar track. */
+body::-webkit-scrollbar-track {
+	border-radius: none;
+	background-color: transparent;
+}
+
+/* Styling the scrollbar. */
+body::-webkit-scrollbar {
+	height: 0.6rem;
+    width: 0.6rem;
+    margin-right: 10px;
+}
+
+/* Styling the scrollbar thumb. */
+body::-webkit-scrollbar-thumb {
+	background-color: var(--gray-400);
+	border-radius: 3px;
+    cursor: move;
+}
+
+/* Removing the scrollbar from the bottom right corner of the page. */
+body::-webkit-scrollbar-corner {
+    border: none;
+    background: none;
+}
