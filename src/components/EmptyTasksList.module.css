@@ -1,0 +1,28 @@
+.container {
+    margin-top: 1.5rem;
+    padding: 4rem 1.5rem;
+
+    border-top: 1px solid var(--gray-400);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: var(--gray-300);
+}
+
+.container div {
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container div {
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+}
