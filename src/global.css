@@ -38,20 +38,26 @@
 
 :focus {
     outline: transparent;
-    box-shadow: 0 0 0 2px var(--blue);
+    box-shadow: 0 0 0 1px var(--purple);
 }
 
 body {
     background: var(--gray-600);
     color: var(--white);
+    -webkit-font-smoothing: antialiased;
 }
 
 body, input, textarea, select, button {
-    font: 400 1rem "Inter", san-serif; 
+    font: 400 1rem "Inter", san-serif;
 }
 
 button {
     cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 html {

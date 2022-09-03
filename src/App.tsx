@@ -1,14 +1,20 @@
 import { useState } from 'react'
 import { Header } from './components/Header'
 
+import styles from './App.module.css'
 import './global.css'
+import { TasksContent } from './components/TasksContent'
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
+
+      <div className={styles.wrapper}>
+        <TasksContent />
+      </div>
       
-    </div>
+    </>
   )
 }
 
