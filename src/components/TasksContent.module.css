@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.containerForm {
+    margin-top: -1.6875rem;
+    width: 100%;
+}
+
+.formTasks {
+    display: flex;
+    flex: 1;
+}
+
+.formTasks input {
+    height: 3.375rem;
+    width: 100%;
+
+    padding: 1rem;
+    margin-right: 0.5rem;
+
+    background: var(--gray-500);
+    color: var(--gray-300);
+
+    border: 0;
+    border-radius: 8px;
+}
+
+.formTasks button[type=submit] {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 1rem;
+
+    background: var(--blue-dark);
+    color: var(--gray-100);
+
+    font-size: 0.875rem;
+    font-weight: bold;
+
+    border: 0;
+    border-radius: 8px;
+
+    transition: background-color 0.15s;
+}
+
+.formTasks button[type=submit]:hover {
+    background: var(--blue);
+}
+
+.containerTasksList {
+    margin-top: 4rem;
+}
+
+.headerTaskList {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tasksCreated {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.tasksDone {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: var(--purple);
+}
+
+.headerTaskList div span {
+    margin-left: 0.5rem;
+    padding: 0.125rem 0.5rem;
+
+    font-size: 0.75rem;
+    color: var(--gray-200);
+
+    background: var(--gray-400);
+
+    border-radius: 50px;
+}
+
+.containerTaskList {
+    margin-top: 1.5rem;
+}
